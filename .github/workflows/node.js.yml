@@ -28,8 +28,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-      working-directory: ../devopskurs
+      working-directory: ./devops_test/devopskurs
     - run: npm run build --if-present
-      working-directory: ../devopskurs
+      working-directory: ./devops_test/devopskurs
     - run: npm test
-      working-directory: ../devopskurs
+      working-directory: ./devops_test/devopskurs
